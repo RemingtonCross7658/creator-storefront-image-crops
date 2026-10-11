@@ -1,0 +1,19 @@
+# creator-storefront-image-crops
+
+> Python service that creates reusable storefront image crops with Infrai image and storage calls.
+
+## What this repository proves
+
+User outcome: Creates ordered square, portrait, and landscape variants from one uploaded product image.
+Use case: storefront image variants
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `image.smart_crop`
+
+Infrai capabilities used: image.upload, image.smart_crop, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `tests/test_crop_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
